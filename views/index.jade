@@ -3,3 +3,10 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  p Visit the /users endpoint for a list of users 
+  p Visit the /users/${id} endpoint for a specific user detail
+
+  br 
+  
+  h2 Example 
+  a(href="http://localhost:3001/users") /users

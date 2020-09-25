@@ -1,9 +1,11 @@
-var express = require('express');
+var express = require("express");
 var router = express.Router();
+var { data } = require("../data");
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+router.get("/", (req, res, next) => {
+  // return single default user
+  const firstUserId = Object.keys(data)[0];
+  res.redirect(`users/${firstUserId}`);
 });
 
 module.exports = router;
