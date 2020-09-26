@@ -4,8 +4,16 @@
 
 ## Install the dependencies and run the server
 
+Install dependencies:
+
+```bash
+npx yarn
 ```
-npx yarn && yarn start
+
+and start the server:
+
+```bash
+npx yarn start
 ```
 
 visit http://localhost:3001/
@@ -14,8 +22,8 @@ visit http://localhost:3001/
 
 ## Endpoints
 
-| route         |        resource         |
-| ------------- | :---------------------: |
-| /             |  default user details   |
-| /users        | list of user names & ID |
-| /users/\${id} |  specific user details  |
+| route         |           resource            |
+| ------------- | :---------------------------: |
+| /             |     default user details      |
+| /users        | list of user names (with IDs) |
+| /users/\${id} |     specific user details     |
