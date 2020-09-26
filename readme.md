@@ -1,11 +1,21 @@
-# react_suspense_concurrent_app_server
+# Designed to work with [react_suspense_concurrent_app](https://github.com/ohansemmanuel/react_suspense_concurrent_app)
 
-Works with ...
+![https://i.imgur.com/OIODDbT.gif](https://i.imgur.com/OIODDbT.gif)
 
-## Run the server
+## Install the dependencies and run the server
 
 ```
-npm yarn start
+npx yarn && yarn start
 ```
 
-## Visit http://localhost:3001/
+visit http://localhost:3001/
+
+<br />
+
+## Endpoints
+
+| route         |        resource         |
+| ------------- | :---------------------: |
+| /             |  default user details   |
+| /users        | list of user names & ID |
+| /users/\${id} |  specific user details  |
